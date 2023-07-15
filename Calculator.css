@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.home{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #e3f9ff;
+    flex-wrap: wrap;
+}
+.calculator{
+    border-radius: 10px;
+    border: 2px rgb(37, 71, 42) solid;
+    height: 65vh;
+    width: 20%;
+}
+
+.display input{
+    margin: 10px 2px;
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+}
+form .firstrow{
+    margin: 5px;
+} 
+form .secondrow{
+    margin: 5px;
+}
+form .thirdrow{
+    margin: 5px;
+}
+form .fourthrow{
+    margin: 5px;
+}
+form .fifthrow{
+    margin: 5px;
+}
+
+form .firstrow input{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+    }
+form .secondrow input{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+}
+form .thirdrow input{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+    
+}
+form .fourthrow input{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+}
+form .fifthrow input{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+   
+    
+}
+
+#equalbutton{
+    width:110px ;
+}
