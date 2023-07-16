@@ -25,6 +25,8 @@
     width: 240px;
     height: 50px;
     border-radius: 10px;
+    font-size: medium;
+    font-weight: bolder;
 }
 form .firstrow{
     margin: 5px;
@@ -86,7 +88,7 @@ form .fifthrow input{
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
-   
+    font-size: medium;
     
 }
 
