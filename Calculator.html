@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./Calculator.css">
+    <script src="./Calculator.js"></script>
 </head>
 <body>
 
@@ -13,36 +14,36 @@
         <div class="calculator">
             <form>
                 <div class="display">
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="screen">
                 </div>
             <div class="firstrow">
-            <input type="button" value="AC">
-            <input type="button" value="DE">
-            <input type="button" value=".">
-            <input type="button" value="/">
+            <input type="button" value="AC" onclick="screen.value=''">
+            <input type="button" value="DE" onclick="cutDown();">
+            <input type="button" value="." onclick="displayNumber('.');">
+            <input type="button" value="/" onclick="displayNumber('/');">
             </div>
             <div class="secondrow">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="*">
+                <input type="button" value="7" onclick="displayNumber('7');">
+                <input type="button" value="8" onclick="displayNumber('8');">
+                <input type="button" value="9" onclick="displayNumber('9');">
+                <input type="button" value="*" onclick="displayNumber('*');">
                 </div>
                 <div class="thirdrow">
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
+                    <input type="button" value="4" onclick="displayNumber('4');">
+                    <input type="button" value="5" onclick="displayNumber('5');">
+                    <input type="button" value="6" onclick="displayNumber('6');">
+                    <input type="button" value="-" onclick="displayNumber('-');">
                     </div>
                     <div class="fourthrow">
-                        <input type="button" value="1">
-                        <input type="button" value="2">
-                        <input type="button" value="3">
-                        <input type="button" value="+">
+                        <input type="button" value="1" onclick="displayNumber('1');">
+                        <input type="button" value="2" onclick="displayNumber('2');">
+                        <input type="button" value="3" onclick="displayNumber('3');">
+                        <input type="button" value="+" onclick="displayNumber('+');">
                         </div>
                         <div class="fifthrow">
-                            <input type="button" value="00">
-                            <input type="button" value="0">
-                            <input type="button" value="=" id="equalbutton">
+                            <input type="button" value="00" onclick="displayNumber('00');">
+                            <input type="button" value="0" onclick="displayNumber('0');">
+                            <input type="button" value="=" id="equalbutton" onclick="screen.value=eval(screen.value)">
                             
                             </div>
                         </form>
