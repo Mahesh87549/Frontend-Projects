@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor with functions</title>
+</head>
+<body>
+    <button onclick="playGame('Rock')">Rock</button>
+    <button onclick="playGame('Paper')">Paper</button>
+    <button onclick="playGame('Scissor')">Scissor</button>
+    <script>
+
+        function playGame(manMove){
+                const computerMove=pickComputerMove();
+                if(manMove==='Rock'){
+                    if(computerMove==='Paper')
+                    alert(`You picked ${manMove} and computerPicked ${computerMove}. You Lose!`);
+                else if(computerMove==='Scissor')
+                alert(`You picked ${manMove} and computerPicked ${computerMove}. You Lose!`);
+            else
+            alert(`You picked ${manMove} and computerPicked ${computerMove}. Tie!`);
+                }
+
+                else   if(manMove==='Paper'){
+                    if(computerMove==='Paper')
+                    alert(`You picked ${manMove} and computerPicked ${computerMove}. Tie!`);
+                else if(computerMove==='Scissor')
+                alert(`You picked ${manMove} and computerPicked ${computerMove}. You Lose!`);
+            else
+            alert(`You picked ${manMove} and computerPicked ${computerMove}. Won!`);
+                }
+                else if (manMove==='Scissor'){
+                    if(computerMove==='Paper')
+                    alert(`You picked ${manMove} and computerPicked ${computerMove}. You win!`);
+                else if(computerMove==='Scissor')
+                alert(`You picked ${manMove} and computerPicked ${computerMove}. Tie!`);
+            else
+            alert(`You picked ${manMove} and computerPicked ${computerMove}. You won!`);
+                }
+
+        }
+
+    function pickComputerMove(){
+        let computerMove;
+        const ranomNumber=Math.random();
+        if(ranomNumber>=0 && ranomNumber<1/3)
+computerMove='Rock';
+else if(ranomNumber>=1/3 && ranomNumber<2/3)
+computerMove='Paper';
+else
+computerMove='Scissor';
+return computerMove;
+    }
+   
+
+    </script>
+</body>
+</html>
