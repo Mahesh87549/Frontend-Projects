@@ -13,8 +13,8 @@ html, body{
     }
       
 .login-container{
-    /* height: 250px;
-    width: 500px; */
+    height: 300px;
+    width: 500px; 
     border: 1px solid #FFFFFF;
     border-radius: 25px;
     background-color: #FFFFFF; 
@@ -23,7 +23,7 @@ html, body{
 }
 
 label{
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     color: #143543;
     display: block;
@@ -32,7 +32,7 @@ label{
 
 .input-fields-container{
     display: block;
-    margin-top: 34px;
+    margin-top: 75px;
     margin-left: 123px;
     
     
@@ -41,13 +41,15 @@ label{
     input{
         margin-bottom: 15px;
         padding: 3px 0px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
         width: 195px;
+        border: 0;
+        border-bottom: 2px solid #eee;
+        
     }
 
-    .button-link-container{
+        .button-link-container{
+        position: absolute;
+        top: 260px;
         margin-top: 98px; 
         margin-bottom: 15px;
         }
