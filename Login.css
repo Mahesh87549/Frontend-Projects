@@ -8,17 +8,25 @@ html, body{
     opacity: 1.0;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
     }
+
+    img{
+        width: 100px;
+    }
       
 .login-container{
-    height: 300px;
+    height: 350px;
     width: 500px; 
     border: 1px solid #FFFFFF;
     border-radius: 25px;
     background-color: #FFFFFF; 
-    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -28,44 +36,36 @@ label{
     color: #143543;
     display: block;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.input-fields-container{
-    display: block;
-    margin-top: 75px;
-    margin-left: 123px;
-    
-    
-    }
 
     input{
-        margin-bottom: 15px;
+        margin-bottom: 42px;
         padding: 3px 0px;
-        width: 195px;
+        width: 285px;
         border: 0;
         border-bottom: 2px solid #eee;
         
     }
 
-        .button-link-container{
-        position: absolute;
-        top: 260px;
-        margin-top: 98px; 
-        margin-bottom: 15px;
-        }
+    input:focus-visible{
+        outline: none;
+        border-bottom: 2px solid #f30505;
 
+    }
+
+       
 button{
     display: inline;
     background: linear-gradient(290deg, #DB6931, #F7B99B);
-    padding: 10px 5px;
+    padding: 15px 5px;
     width: 100px;
     border-radius: 10px;
-    margin-bottom: 0px;
-    margin-left: 115px;
-    margin-right: 5px;
     border: none;
     cursor: pointer;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 13px;
+    margin-right: 50px;
 }
