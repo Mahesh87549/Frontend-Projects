@@ -23,16 +23,15 @@ body{
     width: 06vw;
     height:100vh;
     background-color: #143453;
+    color: whitesmoke;
    }
 
    .icons{
     width: 20px;
     filter: brightness(0) invert(1);
-   }
-   .icons:hover{
-    filter: brightness(0) invert(0);
-   }
-   .side-navigation ul{
+    }
+  
+ .side-navigation ul{
     margin-top: 55px;
    }
 
@@ -40,8 +39,9 @@ body{
     list-style: none;
     padding: 18px;
     color: white;
-}
+    }
 .main-content{
+    display: flex;
     width: 90vw;
     height:95vh;
     background-color:#ffff;
@@ -52,11 +52,20 @@ body{
     margin-bottom:20px;
     margin-right: 20px;
 }
-
-.side-navigation{
-    color: whitesmoke;
+.headers-section{
+    display: flex;
+    position: relative;
+    left: 25px;
+    top: 35px
+    
 }
-    </style>
+h2{
+    margin-right: 12px;
+    color: #143453;
+    font-weight: bold;
+    font-size: 18px;
+}
+</style>
 </head>
 <body>
     
@@ -77,12 +86,11 @@ body{
         </div>
 
         <div class="main-content">
-            <div>
+            <div class="headers-section">
                 <h2>My Tasks</h2>
-                <h2>My Request</h2>
+                <h2>My Requests</h2>
             </div>
-            <div></div>
-
+           
         </div>
     
     

@@ -6,7 +6,6 @@
 body{
     background-color: #143453; 
 }
-
 .side-navigation{
     position:absolute;
     top: 0;
@@ -14,6 +13,7 @@ body{
     width: 06vw;
     height:94vh;
     background-color: #143453;
+    color: whitesmoke;
    }
 
    .icons{
@@ -40,7 +40,9 @@ body{
     margin-bottom:20px;
     margin-right: 20px;
 }
+.headers-section{
+    display: flex;
 
-.side-navigation{
-    color: whitesmoke;
 }
+
+
