@@ -30,6 +30,22 @@ body{
     width: 20px;
     filter: brightness(0) invert(1);
     }
+
+    .tooltip-text{
+        visibility: hidden;
+        position: absolute;
+        
+    }
+
+    li:hover .tooltip-text{
+        visibility: visible;
+        color: #fff;
+        background-color: #EC7237;
+        position: relative;
+        padding: 5px 15px;
+        border-radius: 5px;
+        margin-left: 15px;
+    }
   
  .side-navigation ul{
     margin-top: 55px;
@@ -37,9 +53,16 @@ body{
 
 .side-navigation ul li{
     list-style: none;
-    padding: 18px;
+    padding: 20px 10px;
     color: white;
+    display: flex;
+    /* place-content: center; */
+    position: relative;
+    width: 42%;
+    margin: auto;
+
     }
+
 .main-content{
     display: flex;
     width: 90vw;
@@ -73,14 +96,14 @@ h2{
         <div class="side-navigation">
 
             <ul>
-                <li> <a href="#" title="Home"><img class="icons" src="./My Tasks icons/Home.png" alt="Home" srcset=""></a>  </li>
-                <li> <a href="#" title="Messages"><img class="icons" src="./My Tasks icons/Messages.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="Media"><img class="icons" src="./My Tasks icons/Media.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="People"><img class="icons" src="./My Tasks icons/People.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="Contact"><img class="icons" src="./My Tasks icons/Phone icon.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="Business"><img class="icons" src="./My Tasks icons/Suit Case.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="Cyber Security"><img class="icons" src="./My Tasks icons/Cyber Security.png" alt="Home" srcset=""></a></li>
-                <li> <a href="#" title="Communications"><img class="icons" src="./My Tasks icons/Corporate Communications.png" alt="Home" srcset=""></a></li>
+                <li> <a href="#" ><img class="icons" src="./My Tasks icons/Home.png" alt="Home" srcset=""></a><span class="tooltip-text">Home</span>  </li>
+                <li> <a href="#" title="Messages"><img class="icons" src="./My Tasks icons/Messages.png" alt="Home" srcset=""></a><span class="tooltip-text">Messages</span> </li>
+                <li> <a href="#" title="Media"><img class="icons" src="./My Tasks icons/Media.png" alt="Home" srcset=""></a><span class="tooltip-text">Media</span> </li>
+                <li> <a href="#" title="People"><img class="icons" src="./My Tasks icons/People.png" alt="Home" srcset=""></a><span class="tooltip-text">People</span> </li>
+                <li> <a href="#" title="Contact"><img class="icons" src="./My Tasks icons/Phone icon.png" alt="Home" srcset=""></a><span class="tooltip-text">Contact</span> </li>
+                <li> <a href="#" title="Business"><img class="icons" src="./My Tasks icons/Suit Case.png" alt="Home" srcset=""></a><span class="tooltip-text">Business</span> </li>
+                <li> <a href="#" title="Cyber Security"><img class="icons" src="./My Tasks icons/Cyber Security.png" alt="Home" srcset=""></a><span class="tooltip-text">Cyber Security</span> </li>
+                <li> <a href="#" title="Communications"><img class="icons" src="./My Tasks icons/Corporate Communications.png" alt="Home" srcset=""></a><span class="tooltip-text">Commuincations</span> </li>
             </ul>
 
         </div>
